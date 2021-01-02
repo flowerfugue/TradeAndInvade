@@ -4,13 +4,11 @@ import abigailfails.tradeandinvade.client.renderers.VillagerSleepyEyeRenderLayer
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.VillagerRenderer;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -45,8 +43,8 @@ public class TradeAndInvade {
     private void processIMC(final InterModProcessEvent event) {
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
+   /*
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
-    }
+    }*/
 }

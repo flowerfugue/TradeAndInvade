@@ -18,6 +18,7 @@ public class VillagerSleepyEyeRenderLayer<T extends LivingEntity> extends LayerR
         super(rendererIn);
     }
 
+    @Override
     public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
         if (entitylivingbaseIn.isSleeping())
             renderCopyCutoutModel(this.getEntityModel(), this.layerModel, VILLAGER_EYES, matrixStackIn, bufferIn, packedLightIn, entitylivingbaseIn, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, partialTicks, 1.0F, 1.0F, 1.0F);
